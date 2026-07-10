@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overgeared Hero Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sim-container">
+
+    <!-- Top: Enemy Backpack -->
+    <div class="grid-section">
+      <h2 class="section-title">Enemy Inventory</h2>
+      <div class="backpack" id="enemy">
+        <!-- Note to self: replace with calls from a dedicated javascript file -->
+        <script>
+          for(let i=0;i<48;i++) document.write('<div class="grid-cell" data-index="'+i+'"></div>');
+        </script>
+      </div>
+    </div>
+
+    <!-- Middle: Bars -->
+    <div class="status-bars">
+      <!-- Enemy -->
+      <div class="status-bar-enemy">
+        <div class="bar-label">ENEMY HP</div>
+        <div class="hp-bar">
+          <div class="hp-fill-enemy-hp" style="width: 100%;"></div>
+        </div>
+      </div>
+
+      <!-- Player -->
+      <div class="status-bar player-side">
+        <div class="bar-label">PLAYER HP</div>
+        <div class="hp-bar">
+          <div class="hp-fill-player-hp" style="width: 100%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom: Player Backpack -->
+    <div class="grid-section">
+      <h2 class="section-title">Player Inventory</h2>
+      <div class="backpack" id="player">
+        <!-- Note to self: replace with calls from a dedicated javascript file -->
+        <script>
+          for(let i=0;i<48;i++) document.write('<div class="grid-cell" data-index="'+i+'"></div>');
+        </script>
+      </div>
+    </div>
+  
+  </div>
+</body>
