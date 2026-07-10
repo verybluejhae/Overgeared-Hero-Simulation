@@ -42,7 +42,7 @@ body {
   border: 3px solid #2d2d3d;
   padding: 6px;
   border-radius: 6px;
-  aspect-ratio: 6 / 8;
+  aspect-ratio: 8 / 6;
 }
 
 .grid-cell {
